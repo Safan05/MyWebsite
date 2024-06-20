@@ -87,8 +87,8 @@ body .header .work i{
     position: relative;
 }
 .mainarea .container{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 }
 .mainarea .container .name h1{
     font-family: "Roboto", sans-serif;
@@ -115,7 +115,7 @@ body .header .work i{
     border-width: 10px;
     border-color: var(--sec-col);
     position: absolute;
-    width: calc(100% - 19px);
+    width: calc(100% - 19.2px);
     height: 25px;
     background-color: var(--main-col);
 }
@@ -128,10 +128,40 @@ body .header .work i{
     background-color: white;
 }
 /* Main Area Ends */
-
+/* Potfolio begins */
+.Footer{
+    top: 70%;
+    z-index: -1;
+    height: 350px;
+    position: absolute;
+    background-color: var(--sec-col);
+    width: 100%;
+    border-radius: 70px 70px 0 0;
+}
+.Footer .container h3{
+    position: absolute;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    max-width: 50%;
+    word-spacing: 0px;
+    left: 3%;
+    top: 5%;
+    padding: 1px;
+}
+/* Portfolio Ends */
 @media (max-width:970px){
     .mainarea .container .name h1{
         font-size: 80px;
+    }
+  /*  .mainarea .container .image{
+        display: none;
+    }*/
+    .mainarea .container .image{
+        width: 60%;
+        justify-self: right;
     }
 }
 @media(max-width:1200px){
@@ -149,9 +179,6 @@ body .header .work i{
     }
 }
 @media (max-width:768px){
-    .mainarea .container .name h1{
-        font-size: 50px;
-    }
     body .header .container .MainIcon i{
         font-size: 18px;
     }
@@ -169,10 +196,13 @@ body .header .work i{
         margin-left: 5px;
         border-width: 7px;
         }
+        .Footer .container h3{
+            font-size: 18px;
+        }
 }
 @media (max-width:480px) {
-    .mainarea .container .name h1{
-        font-size: 35px;
+    .mainarea .container{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
 }
 /* Small Screens */
