@@ -204,6 +204,9 @@ body .header .work i{
     .mainarea .container{
         grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     }
+        .mainarea .container .name h1{
+        font-size: 60px;
+    }
 }
 /* Small Screens */
 @media (min-width: 768px){
