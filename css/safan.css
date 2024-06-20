@@ -220,6 +220,10 @@ display: none;
         .mainarea .container .name h1{
         font-size: 60px;
     }
+    .mainarea .container .image{
+            padding-top: 75%;
+        position: fixed;
+    }
 }
 /* Small Screens */
 @media (min-width: 768px){
