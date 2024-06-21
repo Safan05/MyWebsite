@@ -106,4 +106,37 @@ body .header .work i{
     align-self: center;
     margin-top: 1px;
 }
+@media(max-width:1200px){
+    body .header .container .MainIcon i{
+        font-size: 30px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 1em;
+    }
+    body .header .container .icons .item{
+        font-size: 18px;
+    }
+    body .header .container .work{
+        font-size: 18px;
+    }
+}
+@media (max-width:768px){
+    body .header .container .MainIcon i{
+        font-size: 18px;
+    }
+    body .header .container .MainIcon h3{
+        font-size: 0.6em;
+    }
+    body .header .container .icons{
+        margin-left: 10px;
+    }
+    body .header .container .icons .item{
+        font-size: 10px;   
+     }
+    body .header .container .work{
+        font-size: 10px;
+        margin-left: 5px;
+        border-width: 7px;
+        }
+}
 /* Header Ends*/
