@@ -137,9 +137,6 @@ body .header .work i{
     background-color: white;
     transition: 0.3s;
 }
-.mainarea .container .image i:hover .mainarea .container .image{
-display: none;
-}
 /* Main Area Ends */
 /* Potfolio begins */
 .Footer{
@@ -221,9 +218,9 @@ display: none;
         font-size: 60px;
     }
     .mainarea .container .image{
-            padding-top: 75%;
         position: fixed;
-    }
+        top: 45%;
+        }
 }
 /* Small Screens */
 @media (min-width: 768px){
