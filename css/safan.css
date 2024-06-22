@@ -142,7 +142,7 @@ body .header .work i{
 .Footer{
     top: 70%;
     z-index: -1;
-    height: 350px;
+    height: 35vh;
     position: absolute;
     background-color: var(--sec-col);
     width: 100%;
