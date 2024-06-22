@@ -140,3 +140,18 @@ body .header .work i{
         }
 }
 /* Header Ends*/
+/* Landing Starts */
+.landing{
+    position: relative;
+    background-color: var(--main-col);
+    height: calc(100vh - 64px);
+}
+.landing .container h1{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top:10%;
+    left:50%;
+    translate: -50% -50%;
+    font-size: 100px;
+}
+/* Landing Ends */
